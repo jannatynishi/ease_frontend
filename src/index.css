@@ -28,10 +28,10 @@ a {
 }
 /*-----Hovers-----*/
 .hover1:hover {
-  background: var(--bg-secondary);
+  background:#f0f2f5;
 }
 .hover2:hover {
-  background: var(--bg-third);
+  background: #e4e6eb;
 }
 .hover3:hover {
   background: #d4d6da3a;

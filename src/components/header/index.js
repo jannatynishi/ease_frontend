@@ -17,7 +17,6 @@ import SearchMenu from "./SearchMenu";
 import { useRef, useState } from "react";
 import UserMenu from "./userMenu";
 import useClickOutside from "../../helpers/clickOutside";
-import { $CombinedState } from "redux";
 
 export default function Header() {
   const { user } = useSelector((user) => ({ ...user }));
@@ -83,7 +82,8 @@ export default function Header() {
         <div className="circle_icon hover1">
           <CreatePost color={color} />
         </div>
-        <div className="circle_icon hover1" ref={usermenu}>
+        <div className={`circle_icon hover1 ${showUserMenu && "active_header"}`}
+          ref={usermenu}>
           <div
             onClick={() => {
               setShowUserMenu ((prev) => !prev);
