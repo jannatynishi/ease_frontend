@@ -2,10 +2,9 @@ import { Dots, NewRoom, Search } from "../../../svg";
 import Contact from "./Contact";
 import "./style.css";
 export default function RightHome({ user }) {
-  const color = "#65676b";
+  const color = "#1E892D";
   return (
     <div className="right_home">
-      <div className="heading">Sponsored</div>
       <div className="splitter1"></div>
       <div className="contacts_wrap">
         <div className="contacts_header">
