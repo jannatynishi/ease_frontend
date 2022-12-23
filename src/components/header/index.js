@@ -90,7 +90,7 @@ export default function Header() {
 
             }}
           > 
-           <ArrowDown color={color}/>
+           <ArrowDown color={color} style={{ transform: "translateY(2px)" }}/>
           </div>
 
           {showUserMenu && <UserMenu user={user} />}
